@@ -2,7 +2,7 @@ const pgp = require("pg-promise")()
 
 require("dotenv").config()
 
-const databaseUrl = process.nextTick.DB_URL
+const databaseUrl = process.env.DB_URL
 
 const cn = {
   connectionString: databaseUrl,
